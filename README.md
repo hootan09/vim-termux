@@ -71,7 +71,7 @@ call plug#begin('~/.config/nvim/autoload')
     Plug '~/my-prototype-plugin'
 
     " Surrounding ysw)
-    "  -  Plug 'http://github.com/tpope/vim-surround' 
+    Plug 'http://github.com/tpope/vim-surround' 
 
     " NerdTree
     Plug 'https://github.com/preservim/nerdtree' 
@@ -80,7 +80,7 @@ call plug#begin('~/.config/nvim/autoload')
     Plug 'https://github.com/tpope/vim-commentary' 
 
     " Status bar
-    "  -  Plug 'https://github.com/vim-airline/vim-airline' 
+    Plug 'https://github.com/vim-airline/vim-airline' 
 
     " PSQL Pluging needs :SQLSetType pgsql.vim
     "  -  Plug 'https://github.com/lifepillar/pgsql.vim' 
@@ -95,7 +95,7 @@ call plug#begin('~/.config/nvim/autoload')
     "  -  Plug 'https://github.com/neoclide/coc.nvim'  
 
     " Developer Icons
-    "  -  Plug 'https://github.com/ryanoasis/vim-devicons' 
+    Plug 'https://github.com/ryanoasis/vim-devicons' 
 
     " Vim Terminal
     Plug 'https://github.com/tc50cal/vim-terminal' 
@@ -104,7 +104,7 @@ call plug#begin('~/.config/nvim/autoload')
     Plug 'https://github.com/preservim/tagbar' 
 
     " CTRL + N for multiple cursors
-    "  -  Plug 'https://github.com/terryma/vim-multiple-cursors' 
+    Plug 'https://github.com/terryma/vim-multiple-cursors' 
 
 " Initialize plugin system
 call plug#end()
@@ -116,9 +116,9 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 
-"  -  nmap <F8> :TagbarToggle<CR>
+nmap <F8> :TagbarToggle<CR>
 " For No Previews
-"  -  set completeopt-=preview 
+set completeopt-=preview 
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
