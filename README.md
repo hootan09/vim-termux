@@ -1,4 +1,4 @@
-## Vim Config Plugin for Termux (Android)
+## Vim Config Plugins for Termux (Android)
 
 ### Requirement
 
