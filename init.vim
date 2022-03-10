@@ -67,7 +67,7 @@ call plug#begin('~/.config/nvim/autoload')
     "  -  Plug 'https://github.com/ryanoasis/vim-devicons' 
 
     " Vim Terminal
-    "  -  Plug 'https://github.com/tc50cal/vim-terminal' 
+    Plug 'https://github.com/tc50cal/vim-terminal' 
     
     " Tagbar for code navigation
     Plug 'https://github.com/preservim/tagbar' 
