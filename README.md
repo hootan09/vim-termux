@@ -20,13 +20,11 @@ $ python3 -m pip install --user --upgrade pynvim
 
 After Install Needed Package: 
 ```sh
-$ mkdir -p ~/.config/nvim   # init.vim and all plugins goes here
-
 $ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-#only in wsl(win10)
-$sudo chmod 751 -R ~/.config #maybe needed chown on win10 wsl
+# only in wsl(win10)
+$ sudo chmod 751 -R ~/.config #maybe needed chown on win10 wsl
 ```
 
 #### Put in  ~/.config/nvim/init.vim
