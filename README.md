@@ -158,4 +158,30 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 
 
 ### Install Plugins
+```vim
+:PlugInstall
+```
 <img src="./assets/installer.gif" height="450">
+
+
+#### ShortCuts Key
+```vim
+gg "=> Go to the First Line
+G  "=> Go to the Last Line
+v  "=> Visuall Mode (for Selecting)
+I  "=> Go to Begining Line
+A  "=> Go to End of Line
+dd "=> Delete Line
+o  "=> Open New Line (Bellow)
+O  "=> Open New Line (Above)
+
+gcc "=> Comments/Uncomments
+
+Ctrl + f "=> NERDTree Focus
+Ctrl + t "=> NERDTree Toggle
+
+:TerminalSplit bash "=> Open bash Terminal
+
+:/<Search Word in Document> "=> n (Find Next in Bellow ) N (Find Next in Above)
+
+```
