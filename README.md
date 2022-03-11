@@ -30,7 +30,11 @@ $ curl -fLo ~/.config/nvim/init.vim --create-dirs \
 ### Other Config(Not Needed for Android)
 ```sh
 # only in wsl(win10)
+$ sudo apt-get install curl
 $ sudo chmod 751 -R ~/.config #maybe needed chown on win10 wsl
+$ sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash #install nvm (after install close terminal and reopent it again)
+$ command -v nvm # Verify Installation
+$ nvm install --lts # Latest stable LTS release (recommended) Or $nvm install node # Current release
 ```
 
 #### Put in  ~/.config/nvim/init.vim
