@@ -174,6 +174,8 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 #Tagbar Plugin https://github.com/preservim/tagbar
 $sudo apt install exuberant-ctags
 
+#----------------------------------------------------------------------------------
+
 # coc Plugin https://github.com/neoclide/coc.nvim (Needed Nodejs For Build Plugin)
 $ cd ~/.config/nvim/autoload/coc.nvim
 $ npm install
