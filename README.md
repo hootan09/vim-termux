@@ -184,12 +184,14 @@ $ nvim # For Python3 :CocInstall coc-pyright
 
 
 # Old Python with jedi
-#$ nvim # <:CocInstall coc-python > note for python need install jedi
-#$ python3 -m pip --user --upgrade jedi #for python AutoCompelete 
+#$ nvim # <:CocInstall coc-python > note for python need install jedi $python3 -m pip --user --upgrade jedi
 
 # For generic web-development consider :CocInstall coc-tsserver coc-json coc-html coc-css
+
 # For Python3 :CocInstall coc-pyright
+
 # For PHP :CocInstall coc-phpls
+
 # List of All Extension :CocList extensions
 # Document https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
 ```
