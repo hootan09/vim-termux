@@ -1,5 +1,11 @@
 ## Vim Config Plugins for Termux (Android)
 
+### Windows(wsl)
+<img src="./assets/2.png" height="450">
+
+### Android (termux)
+<img src="./assets/1.jpg" height="450">
+
 ### Requirement
 
 ```sh
