@@ -18,16 +18,16 @@ $ pkg install neovim # in nvim => ($:checkhealth provider) must be ok
 $ python3 -m pip install --user --upgrade pynvim
 ```
 
-After Install Needed Package: 
+After Install All Needed Package Do: 
 ```sh
-$ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/hootan09/vim-termux/main/plug.vim
+$ #curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+  #  https://raw.githubusercontent.com/hootan09/vim-termux/main/plug.vim
 
 $ curl -fLo ~/.config/nvim/init.vim --create-dirs \
     https://raw.githubusercontent.com/hootan09/vim-termux/main/init.vim
 ```
 
-### other Config(not needed)
+### Other Config(Not Needed for Android)
 ```sh
 # only in wsl(win10)
 $ sudo chmod 751 -R ~/.config #maybe needed chown on win10 wsl
@@ -174,6 +174,8 @@ A  "=> Go to End of Line
 dd "=> Delete Line
 o  "=> Open New Line (Bellow)
 O  "=> Open New Line (Above)
+y  "=> Copy
+p  "=> Paste
 
 gcc "=> Comments/Uncomments
 
