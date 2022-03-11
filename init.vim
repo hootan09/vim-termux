@@ -60,8 +60,8 @@ call plug#begin('~/.config/nvim/autoload')
     " Retro Scheme
     Plug 'https://github.com/rafi/awesome-vim-colorschemes' 
 
-    " Auto Completion
-    "  -  Plug 'https://github.com/neoclide/coc.nvim'  
+    " Auto Completion, Only Available in NeoVim (Not Vim), Needed Nodejs for Build Plugin
+    Plug 'https://github.com/neoclide/coc.nvim'
 
     " Developer Icons
     Plug 'https://github.com/ryanoasis/vim-devicons' 
@@ -71,6 +71,7 @@ call plug#begin('~/.config/nvim/autoload')
     
     " Tagbar for code navigation
     Plug 'https://github.com/preservim/tagbar' 
+    " For this Plugin Need $sudo apt install exuberant-ctags
 
     " CTRL + N for multiple cursors
     Plug 'https://github.com/terryma/vim-multiple-cursors' 

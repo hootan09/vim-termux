@@ -97,8 +97,8 @@ call plug#begin('~/.config/nvim/autoload')
     " Retro Scheme
     Plug 'https://github.com/rafi/awesome-vim-colorschemes' 
 
-    " Auto Completion
-    "  -  Plug 'https://github.com/neoclide/coc.nvim'  
+    " Auto Completion, Only Available in NeoVim (Not Vim), Needed Nodejs for Build Plugin
+    Plug 'https://github.com/neoclide/coc.nvim'
 
     " Developer Icons
     Plug 'https://github.com/ryanoasis/vim-devicons' 
@@ -108,6 +108,7 @@ call plug#begin('~/.config/nvim/autoload')
     
     " Tagbar for code navigation
     Plug 'https://github.com/preservim/tagbar' 
+    " For this Plugin Need $sudo apt install exuberant-ctags
 
     " CTRL + N for multiple cursors
     Plug 'https://github.com/terryma/vim-multiple-cursors' 
@@ -164,6 +165,30 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 <img src="./assets/installer.gif" height="450">
 
 
+### Some Plugin Needed
+```sh
+#Tagbar Plugin https://github.com/preservim/tagbar
+$sudo apt install exuberant-ctags
+
+# coc Plugin https://github.com/neoclide/coc.nvim (Needed Nodejs For Build Plugin)
+$ cd ~/.config/nvim/autoload/coc.nvim
+$ npm install
+$ npm run build
+$ nvim # For Python3 :CocInstall coc-pyright
+
+
+# Old Python with jedi
+#$ nvim # <:CocInstall coc-python > note for python need install jedi
+#$ python3 -m pip --user --upgrade jedi #for python AutoCompelete 
+
+# For generic web-development consider :CocInstall coc-tsserver coc-json coc-html coc-css
+# For Python3 :CocInstall coc-pyright
+# For PHP :CocInstall coc-phpls
+# List of All Extension :CocList extensions
+# Document https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
+```
+
+
 #### ShortCuts Key
 ```vim
 gg "=> Go to the First Line
@@ -178,6 +203,8 @@ y  "=> Copy
 p  "=> Paste
 
 gcc "=> Comments/Uncomments
+
+F8 "=> Toggle TagBars
 
 Ctrl + f "=> NERDTree Focus
 Ctrl + t "=> NERDTree Toggle
