@@ -175,7 +175,7 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 <img src="./assets/installer.gif" height="450">
 
 
-### Some Plugin Needed
+### Some Plugins Requirements
 ```sh
 #Tagbar Plugin https://github.com/preservim/tagbar
 $sudo apt install exuberant-ctags
